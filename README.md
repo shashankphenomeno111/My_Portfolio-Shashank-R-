@@ -100,42 +100,27 @@ Copy code
 
 ---
 
-## 💻 How to Run Locally
+✨ Author
+👨‍💻 Shashank R
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/<your-username>/portfolio.git
+Aspiring Data Scientist with hands-on experience in:
 
-# 2. Open the folder
-cd portfolio
+Machine Learning
 
-# 3. Open index.html in your browser
-No frameworks or build tools required.
+Python, SQL
 
-🌍 Deployment (GitHub Pages)
-Go to Settings → Pages
+EDA, Feature Engineering
 
-Set:
+Streamlit Deployment
 
-Source → Deploy from a branch
+End-to-end ML Solutions
 
-Branch → main → / (root)
+🎓 BE in Information Science Engineering
+🏙️ Based in Bengaluru, India
 
-Save
-
-Visit your live URL!
-
-📸 Screenshots (Optional)
-You can add screenshots later:
-
-scss
-Copy code
-![Portfolio Screenshot](./screenshot1.png)
-![Projects Showcase](./screenshot2.png)
-📞 Contact
-📧 Email: shashankphenomenon@gmail.com
+🔗 Portfolio: (your GitHub Pages link here)
 🔗 LinkedIn: https://www.linkedin.com/in/shashankdatascientist/
-💻 GitHub: https://github.com/shashankphenomeno111
 
-⭐ If you like this portfolio…
-Give the repository a star ⭐ on GitHub — it helps!
+🔗 GitHub: https://github.com/shashankphenomeno111
+
+📧 Email:shashankphenomenon@gmail.com
