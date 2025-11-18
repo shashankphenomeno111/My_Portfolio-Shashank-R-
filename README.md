@@ -8,8 +8,7 @@ This portfolio highlights my work as an aspiring **Data Scientist / Machine Lear
 ---
 
 ## 🚀 Live Portfolio  
-🔗 **https://<your-username>.github.io/portfolio/**  
-*(Replace link with your actual GitHub Pages link)*
+🔗(https://shashankphenomeno111.github.io/My_Portfolio-Shashank-R-/)
 
 ---
 
