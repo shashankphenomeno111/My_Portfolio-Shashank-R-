@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- LinkedIn Portfolio Preview -->
-<meta property="og:title" content="Shashank R - Data Science Portfolio" />
-<meta property="og:description" content="Data Science & Machine Learning Portfolio | Projects | Power BI Dashboards | Certifications" />
-<meta property="og:image" content="https://shashankphenomeno111.github.io/My_Portfolio-Shashank-R-/preview.png" />
-<meta property="og:url" content="https://shashankphenomeno111.github.io/My_Portfolio-Shashank-R-/" />
-<meta property="og:type" content="website" />
-
   <meta charset="UTF-8" />
   <title>Shashank R | Data Scientist Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -590,237 +583,278 @@
     }
 
     /* ---------------- CERTIFICATES ---------------- */
-    /* ---------------- CERTIFICATES ---------------- */
-#certificates {
-  margin-top: 3rem;
-}
+  #certificates {
+    margin-top: 3rem;
+  }
 
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.75rem;
-  margin-top: 1.2rem;
-}
+  .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.75rem;
+    margin-top: 1.2rem;
+  }
 
-/* card */
-.cert-card {
-  position: relative;
-  background: radial-gradient(circle at top left, #0b1020, #050816 70%);
-  border-radius: 22px;
-  padding: 1.5rem 1.6rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
-  overflow: hidden;
-  transform: translateY(0) scale(1);
-  transition:
-    transform 0.28s ease,
-    box-shadow 0.28s ease,
-    border-color 0.28s ease,
-    background 0.28s ease;
-}
+  /* card */
+  .cert-card {
+    position: relative;
+    background: radial-gradient(circle at top left, #0b1020, #050816 70%);
+    border-radius: 22px;
+    padding: 1.5rem 1.6rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    overflow: hidden;
+    transform: translateY(0) scale(1);
+    transition:
+      transform 0.28s ease,
+      box-shadow 0.28s ease,
+      border-color 0.28s ease,
+      background 0.28s ease;
+  }
 
-/* glowing overlay – important: don't block clicks */
-.cert-card::before {
-  content: "";
-  position: absolute;
-  inset: -30%;
-  background:
-    radial-gradient(circle at 0% 0%, rgba(76, 201, 240, 0.24), transparent 55%),
-    radial-gradient(circle at 100% 100%, rgba(247, 37, 133, 0.22), transparent 55%);
-  opacity: 0;
-  transition: opacity 0.28s ease;
-  pointer-events: none; /* ✅ so buttons remain clickable */
-}
+  /* glowing overlay – important: don't block clicks */
+  .cert-card::before {
+    content: "";
+    position: absolute;
+    inset: -30%;
+    background:
+      radial-gradient(circle at 0% 0%, rgba(76, 201, 240, 0.24), transparent 55%),
+      radial-gradient(circle at 100% 100%, rgba(247, 37, 133, 0.22), transparent 55%);
+    opacity: 0;
+    transition: opacity 0.28s ease;
+    pointer-events: none; /* ✅ so buttons remain clickable */
+  }
 
-.cert-card:hover {
-  transform: translateY(-8px) scale(1.01);
-  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.9);
-  border-color: rgba(76, 201, 240, 0.6);
-}
+  .cert-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 26px 60px rgba(0, 0, 0, 0.9);
+    border-color: rgba(76, 201, 240, 0.6);
+  }
 
-.cert-card:hover::before {
-  opacity: 1;
-}
+  .cert-card:hover::before {
+    opacity: 1;
+  }
 
-/* header text */
-.cert-header {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
+  /* header text */
+  .cert-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
 
-.cert-pill {
-  align-self: flex-start;
-  font-size: 0.7rem;
-  border-radius: 999px;
-  padding: 0.18rem 0.7rem;
-  background: rgba(34, 197, 94, 0.1);
-  border: 1px solid rgba(34, 197, 94, 0.7);
-  color: #bbf7d0;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
+  .cert-pill {
+    align-self: flex-start;
+    font-size: 0.7rem;
+    border-radius: 999px;
+    padding: 0.18rem 0.7rem;
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.7);
+    color: #bbf7d0;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 
-.cert-title {
-  font-size: 1.05rem;
-  font-weight: 600;
-}
+  .cert-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
 
-.cert-org {
-  font-size: 0.86rem;
-  color: var(--accent);
-  font-weight: 500;
-}
+  .cert-org {
+    font-size: 0.86rem;
+    color: var(--accent);
+    font-weight: 500;
+  }
 
-.cert-meta {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
+  .cert-meta {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
 
-.cert-desc {
-  font-size: 0.87rem;
-  color: var(--text-muted);
-}
+  .cert-desc {
+    font-size: 0.87rem;
+    color: var(--text-muted);
+  }
 
-/* view button with animated gradient */
-.cert-btn {
-  margin-top: 0.5rem;
-  align-self: flex-start;
-  border-radius: 999px;
-  padding: 0.5rem 1.2rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  background-image: linear-gradient(120deg, var(--accent), var(--accent-2));
-  background-size: 220% 220%;
-  background-position: 0% 50%;
-  color: #ffffff;
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.7);
-  transition:
-    background-position 0.35s ease,
-    transform 0.2s ease,
-    box-shadow 0.25s ease;
-}
+  /* view button with animated gradient */
+  .cert-btn {
+    margin-top: 0.5rem;
+    align-self: flex-start;
+    border-radius: 999px;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background-image: linear-gradient(120deg, var(--accent), var(--accent-2));
+    background-size: 220% 220%;
+    background-position: 0% 50%;
+    color: #ffffff;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.7);
+    transition:
+      background-position 0.35s ease,
+      transform 0.2s ease,
+      box-shadow 0.25s ease;
+  }
 
-.cert-btn:hover {
-  background-position: 100% 50%;
-  transform: translateY(-2px);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.85);
-}
+  .cert-btn:hover {
+    background-position: 100% 50%;
+    transform: translateY(-2px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.85);
+  }
 
-/* ------------ CERTIFICATE MODAL ------------ */
-.cert-modal-backdrop {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.25s ease;
-}
+  /* --- New button styles (View = Gradient Glass, Download = Sunset Glow) --- */
+  /* Gradient Glass (View Resume) */
+  .btn-view {
+    background: linear-gradient(135deg, #56CCF2 0%, #9B51E0 100%);
+    color: #fff;
+    padding: 0.65rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    box-shadow: 0 10px 30px rgba(75, 123, 255, 0.18), inset 0 -2px 8px rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.12);
+    transition: all .22s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .btn-view:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(75, 123, 255, 0.28);
+    filter: saturate(1.08);
+  }
 
-.cert-modal-backdrop.active {
-  opacity: 1;
-  pointer-events: auto;
-}
+  /* Sunset Glow (Download Resume) */
+  .btn-download {
+    background: linear-gradient(90deg, #FFD36E 0%, #FF8FB1 100%);
+    color: #0b0b10;
+    padding: 0.6rem 1.35rem;
+    border-radius: 999px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    border: none;
+    box-shadow: 0 12px 36px rgba(255,140,140,0.14), 0 2px 8px rgba(0,0,0,0.25);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    transition: all .22s ease;
+  }
+  .btn-download:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 28px 66px rgba(255,120,160,0.22);
+    filter: brightness(1.05);
+  }
 
-.cert-modal {
-  width: min(900px, 94vw);
-  height: min(600px, 82vh);
-  background: radial-gradient(circle at top, #111827, #020617 70%);
-  border-radius: 20px;
-  border: 1px solid rgba(148, 163, 184, 0.35);
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.95);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
+  /* ------------ CERTIFICATE MODAL ------------ */
+  .cert-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
 
-.cert-modal-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.35);
-}
+  .cert-modal-backdrop.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
 
-.cert-modal-title {
-  font-size: 0.95rem;
-  font-weight: 600;
-}
+  .cert-modal {
+    width: min(900px, 94vw);
+    height: min(600px, 82vh);
+    background: radial-gradient(circle at top, #111827, #020617 70%);
+    border-radius: 20px;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.95);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
 
-.cert-modal-close {
-  border: none;
-  border-radius: 999px;
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  background: rgba(15, 23, 42, 0.9);
-  color: #e5e7eb;
-  font-size: 1rem;
-  transition: 0.2s ease;
-}
+  .cert-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+  }
 
-.cert-modal-close:hover {
-  background: rgba(248, 113, 113, 0.3);
-  color: #fecaca;
-}
+  .cert-modal-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
 
-.cert-modal-body {
-  flex: 1;
-  background: #020617;
-}
+  .cert-modal-close {
+    border: none;
+    border-radius: 999px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: rgba(15, 23, 42, 0.9);
+    color: #e5e7eb;
+    font-size: 1rem;
+    transition: 0.2s ease;
+  }
 
-.cert-modal-body iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
+  .cert-modal-close:hover {
+    background: rgba(248, 113, 113, 0.3);
+    color: #fecaca;
+  }
 
-/* modal footer with actions */
-.cert-modal-footer {
-  padding: 0.6rem 0.95rem 0.75rem;
-  display: flex;
-  justify-content: flex-end;
-  gap: 0.6rem;
-  border-top: 1px solid rgba(148, 163, 184, 0.3);
-  background: radial-gradient(circle at top, #020617, #020617 60%);
-}
+  .cert-modal-body {
+    flex: 1;
+    background: #020617;
+  }
 
-.cert-modal-footer a {
-  font-size: 0.8rem;
-  border-radius: 999px;
-  padding: 0.35rem 0.9rem;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  border: 1px solid rgba(148, 163, 184, 0.7);
-  background: rgba(15, 23, 42, 0.95);
-  color: #e5e7eb;
-  cursor: pointer;
-  transition: 0.22s ease;
-}
+  .cert-modal-body iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 
-.cert-modal-footer a:hover {
-  background: rgba(52, 211, 153, 0.2);
-  border-color: rgba(52, 211, 153, 0.9);
-  color: #bbf7d0;
-}
+  .cert-modal-footer {
+    padding: 0.6rem 0.95rem 0.75rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.6rem;
+    border-top: 1px solid rgba(148, 163, 184, 0.3);
+    background: radial-gradient(circle at top, #020617, #020617 60%);
+  }
+
+  .cert-modal-footer a {
+    font-size: 0.8rem;
+    border-radius: 999px;
+    padding: 0.35rem 0.9rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    background: rgba(15, 23, 42, 0.95);
+    color: #e5e7eb;
+    cursor: pointer;
+    transition: 0.22s ease;
+  }
+
+  .cert-modal-footer a:hover {
+    background: rgba(52, 211, 153, 0.2);
+    border-color: rgba(52, 211, 153, 0.9);
+    color: #bbf7d0;
+  }
 
 
 
@@ -1155,6 +1189,7 @@
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#certificates">Certificates</a>
+        <a href="#resume">Resume</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -1194,6 +1229,8 @@
           <a href="https://github.com/shashankphenomeno111" target="_blank" class="btn btn-social">
             <i class="fab fa-github"></i> GitHub
           </a>
+          <!-- Quick resume buttons in hero -->
+          <a href="#resume" class="btn" style="border:1px solid rgba(255,255,255,0.06); color:var(--text-main);">Resume</a>
         </div>
       </div>
 
@@ -1402,34 +1439,52 @@
   </a>
 </article>
 
-    <!-- Example extra certificate – duplicate & edit as needed -->
-    <!--
-    <article class="cert-card">
-      <div class="cert-header">
-        <span class="cert-pill">Workshop</span>
-        <h3 class="cert-title">Machine Learning Bootcamp</h3>
-        <p class="cert-org">Some Org · Online</p>
-        <p class="cert-meta">Completed · Jan 2025</p>
-      </div>
-      <p class="cert-desc">
-        Completed an intensive hands-on bootcamp covering ML algorithms,
-        EDA and real-world case studies.
-      </p>
-
-      <a
-        href="ml_bootcamp_certificate.pdf"
-        target="_blank"
-        class="cert-btn"
-        data-pdf="ml_bootcamp_certificate.pdf"
-        data-title="Machine Learning Bootcamp"
-      >
-        View Certificate
-      </a>
-    </article>
-    -->
   </div>
 </section>
-<!-- CERTIFICATE MODAL -->
+
+    <!-- RESUME SECTION (UPDATED) -->
+    <section id="resume">
+      <h2 class="section-title">Resume</h2>
+
+      <div class="cert-grid">
+        <article class="cert-card">
+          <div class="cert-header">
+            <span class="cert-pill">Resume</span>
+            <h3 class="cert-title">Shashank R — Data Scientist (Resume)</h3>
+            <p class="cert-org">Bengaluru · Open to opportunities</p>
+            <p class="cert-meta">Last updated: Dec 2025</p>
+          </div>
+
+          <p class="cert-desc">
+            Download or preview my latest resume. The preview opens in a secure modal and you can download a PDF copy directly.
+          </p>
+
+          <!-- View Resume (modal preview) -->
+          <a 
+            href="https://drive.google.com/file/d/1fMuzwYqNGHXTYh6adBWmEWMgOBKpoh1l/view?usp=sharing"
+            class="cert-btn btn-view"
+            data-pdf="https://drive.google.com/file/d/1fMuzwYqNGHXTYh6adBWmEWMgOBKpoh1l/preview"
+            data-title="Shashank R — Resume (Dec 2025)"
+          >
+            <i class="fa fa-eye"></i>
+            View Resume
+          </a>
+
+          <!-- Direct Download Resume -->
+          <a
+            href="https://drive.google.com/uc?export=download&id=1fMuzwYqNGHXTYh6adBWmEWMgOBKpoh1l"
+            class="cert-btn btn-download"
+            download="Shashank_R_Resume.pdf"
+            rel="noopener noreferrer"
+          >
+            <i class="fa fa-download"></i>
+            Download Resume
+          </a>
+        </article>
+      </div>
+    </section>
+
+<!-- CERTIFICATE MODAL (REUSED FOR RESUME PREVIEW) -->
 <div id="cert-modal" class="cert-modal-backdrop">
   <div class="cert-modal">
     <div class="cert-modal-header">
@@ -1440,7 +1495,7 @@
     </div>
 
     <div class="cert-modal-body">
-      <iframe id="cert-frame" src="" title="Certificate preview"></iframe>
+      <iframe id="cert-frame" src="" loading="lazy" title="Certificate preview"></iframe>
     </div>
 
     <div class="cert-modal-footer">
@@ -1455,7 +1510,7 @@
 </div>
 
 <script>
-  // Certificate modal logic
+  // Certificate/modal logic (also used for resume preview)
   (function () {
     const modalBackdrop = document.getElementById("cert-modal");
     const frame = document.getElementById("cert-frame");
@@ -1466,12 +1521,21 @@
 
     function openModal(pdfSrc, title) {
       frame.src = pdfSrc;
-      titleEl.textContent = title || "Certificate";
+      titleEl.textContent = title || "Preview";
 
       // set footer links
       openTabLink.href = pdfSrc;
-      downloadLink.href = pdfSrc;
-      downloadLink.setAttribute("download", (title || "certificate").replace(/\s+/g, "_") + ".pdf");
+
+      // If the pdfSrc is a Google Drive preview/view link, convert to direct-download
+      let downloadHref = pdfSrc;
+      const driveIdMatch = pdfSrc && pdfSrc.match(/\/d\/([a-zA-Z0-9_-]{10,})/);
+      if (driveIdMatch && driveIdMatch[1]) {
+        const id = driveIdMatch[1];
+        downloadHref = `https://drive.google.com/uc?export=download&id=${id}`;
+      }
+
+      downloadLink.href = downloadHref;
+      downloadLink.setAttribute("download", (title || "document").replace(/\s+/g, "_") + ".pdf");
 
       modalBackdrop.classList.add("active");
     }
@@ -1481,9 +1545,10 @@
       frame.src = ""; // stop loading when closed
     }
 
-    // Attach click handlers to all certificate buttons
+    // Attach click handlers to all buttons that have data-pdf (certificates & resume)
     document.querySelectorAll(".cert-btn[data-pdf]").forEach((btn) => {
       btn.addEventListener("click", function (e) {
+        // if the button's href points to the file but has data-pdf, we open modal
         e.preventDefault(); // use modal instead of default navigation
         const pdf = this.getAttribute("data-pdf");
         const title = this.getAttribute("data-title");
@@ -1508,9 +1573,6 @@
     });
   })();
 </script>
-
-
-
 
     <!-- PROJECTS -->
     <section id="projects">
@@ -1758,7 +1820,3 @@
   </script>
 </body>
 </html>
-
-
-
-
